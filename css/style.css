@@ -1,6 +1,6 @@
 :root {
-  --bg: #AEDEFC;
-  --primary: #F875AA;
+  --bg: #DEAC80;
+  --primary: #914F1E;
 }
 
 * {
@@ -36,7 +36,7 @@ div {
     right: 0;
     background-color: var(--bg);
     border-bottom: 0.5rem solid var(--primary);
-    padding: 1rem;
+    padding: 1.5rem;
     z-index: 10000;
 }
 
@@ -70,4 +70,60 @@ div {
 
 #hamburger-menu {
     display: none;
+}
+
+
+/* hero */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../css/foto/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home h1, .home p, .home button {
+    max-width: 50rem;
+}
+
+.home h1 {
+    color: #333;
+    font-size: 5rem;
+}
+
+.home h1 span {
+    color: #fff;
+    font-size: 6.5rem;
+    font-style: italic;
+}
+
+.home h1 span span {
+    color: var(--primary);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #555555;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.home button {
+    font-size: 2.5rem;
+    background-color: #fff;
+    color: #af6933;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 2vh;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.20);
+    border: 2px solid var(--bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem var(--bg);
 }
